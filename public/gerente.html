@@ -1,0 +1,75 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Pagina Gerente</title>
+      <link rel="stylesheet" href="gerente.css" />
+    </head>
+
+    <div id="area">
+      <form id="formulario" action="JavaScript:submitForm()" method="POST">
+        <fieldset>
+          <legend>Área do Gerente</legend>
+
+          <div>
+            <label for="Operacao">Escolha a operação:</label>
+
+            <select name="Operacao" id="Operacao">
+              <option value="2">Total de vendas por Vendedor</option>
+              <option value="3">Total de vendas por Loja</option>
+              <option value="4">Tota de vendas por período</option>
+              <option value="5">Melhor vendedor</option>
+              <option value="6">Melhor loja</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="vendedor">Nome do Vendedor:</label>
+            <input
+              class="vendedor"
+              type="text"
+              id="nomeVendedor"
+              nome="nomeVendedor"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="vendasLojas">Código da loja:</label>
+            <input
+              class="vendasLojas"
+              type="number"
+              id="vendasLojas"
+              nome="vendasLojas"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="inicio">Total da vendas por período:</label><br>
+            <div id="periodo">
+            
+              <br>
+              <label for="inicio">Início:</label><br>
+              <input id="incio" type="date" />
+              <label for="Fim">Fim:</label><br>
+              <input id="fim" type="date" />
+            </div>
+          </div>
+          
+          <br />
+          
+   
+          <div class="botaoSubDiv">
+            <input class="botaoSub" id="botao1" type="submit" />
+            <a href="./index.html" class="botaoSub" id="botao2">Retornar</a>
+          </div>
+        </fieldset>
+      </form>
+      <div id="resultado"> 
+       <strong>Resultado: </strong>
+       <p id="ResultadoContent"> </p>
+      </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./gerente.js"></script>
+  </html></DOCTYPE
+>

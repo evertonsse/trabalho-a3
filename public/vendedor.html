@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Venda</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="vendedor.css">
+   </head>
+
+<body>
+
+    <div id="area">
+
+        <form id="formulario" action="JavaScript:submitForm()" method="POST">
+            <fieldset>
+                <legend>Área de Vendas:</legend>
+                <div>
+                    <label for="codigoOperacao">Código da Operação:</label>
+                    <input class="codigoO" type="number" id="codigoOperacao" name="codigoOperacao" value="1"  disabled="disabled"/>
+                </div>
+                <br>
+                <div>
+                    <label for="nomeVendedor">Nome do Vendedor:</label>
+                    <input class="vendedor" type="text" id="nomeVendedor" name="nomeVendedor" />
+                </div>
+                <br>
+                <div>
+                    <label for="codigoLoja">Código da Loja:</label>
+                    <input class="codigoL" type="number" id="codigoLoja" name="codigoLoja" />
+                </div>
+                <br>
+                <div>
+                    <label for="dataVenda">Data da venda:</label>
+                    <input class="dataV" type="date" id="dataVenda" name="dataVenda" />
+                </div>
+                <br>
+                <div>
+                    <label for="valorVenda">Valor total da venda:</label>
+                    <input class="valorV" type="number" step="any" id="valorVenda" name="valorVenda" placeholder="R$" />
+                </div>
+                <br>
+                <div class="botaoSubDiv">
+                    <input class="botaoSub" id="botao1" type="submit">
+                    <a href="./index.html" class="botaoSub" id="botao2" >Retornar</a>                    
+                </div>
+    </div>
+    </fieldset>
+
+    </form>
+    </div>
+    
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./vendedor.js"></script>
+</body>
+
+</html>

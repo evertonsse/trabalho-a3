@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+    background-color: rgb(237, 243, 237);
+}
+
+#area {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 40vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+
+}
+
+fieldset {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vh;
+  align-items: center;
+  border: none;
+} 
+input { 
+    width: 30vw;
+    font-family: Roboto;
+    font-weight: 400;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px;
+
+}
+label { 
+    font-family: Roboto;
+    font-weight: 400;
+}
+legend {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+fieldset div { 
+    display: flex;
+    flex-direction: column;
+}
+
+.botaoSub {
+  width: 45%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.botaoSubDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between;
+}
+
+#botao2 { 
+    background-color: rgb(218, 59, 59);
+    text-align: center;
+    text-decoration: none;
+    color: black;     
+}
+#botao1 {
+     background-color: green;
+}
+
+a:visited {
+    color: black;
+}
+
+#botao1:hover { 
+    cursor: pointer;
+}
+*:disabled {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+}
